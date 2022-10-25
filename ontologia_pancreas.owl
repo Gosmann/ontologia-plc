@@ -13,11 +13,84 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Has_antecedent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Has_antecedent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Antecedent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#has_Daily_Habits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#has_Daily_Habits">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Has_antecedent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Daily_Habits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#has_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#has_age">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Anatomopathology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Anatomopathology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result"/>
+    </owl:Class>
     
 
 
@@ -27,10 +100,58 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Bile_Ducts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Bile_Ducts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Signs"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Body -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Body">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CA125 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CA125">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Laboratory_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CA19-9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CA19-9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Laboratory_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT"/>
     </owl:Class>
     
 
@@ -43,10 +164,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Carcinoembryonic_Antigen_CEA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Carcinoembryonic_Antigen_CEA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Laboratory_Test"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central_Scar -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central_Scar">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronics_Pancreatitis_Signs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronics_Pancreatitis_Signs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Signs"/>
     </owl:Class>
     
 
@@ -73,6 +210,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Disease"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_features -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_features"/>
@@ -93,9 +238,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic_Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic_Result">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diseases -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS"/>
+    </owl:Class>
     
 
 
@@ -155,10 +324,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Laboratory_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Laboratory_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Location -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Location">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result"/>
     </owl:Class>
     
 
@@ -183,6 +368,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Number_of_Lesions">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI"/>
     </owl:Class>
     
 
@@ -219,10 +412,82 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignat_Potential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignat_Potential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic_Result"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Personal_Antecedent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Out_Of_Mucine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Out_Of_Mucine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Surgery_Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Surgery_Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Cancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Cancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Disease"/>
     </owl:Class>
     
 
@@ -245,6 +510,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Recoil">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Consequences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Sexe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Sexe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Signs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Signs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic"/>
     </owl:Class>
     
 
@@ -279,9 +560,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Test_Result">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Treatment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Treatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diagnostic_Result"/>
+    </owl:Class>
     
 
 
@@ -301,6 +598,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#other_signs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#other_signs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Signs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Patient"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -312,10 +625,562 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#AGC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#AGC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#other_signs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#AGC_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#AGC_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#AGC__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#AGC__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#APC_Angio_Panc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#APC_Angio_Panc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_Protocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#APC_PORT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#APC_PORT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_Protocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ART_Enhancing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ART_Enhancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_pariental_enhancement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Abdominal_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Abdominal_pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Abstention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Abstention">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Acute_Pancreatitis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Acute_Pancreatitis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatitis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Air_bubbles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Air_bubbles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hematic_content"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Annular_Pancreas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Annular_Pancreas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Benign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Benign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignat_Potential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Between_1_and_3_years -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Between_1_and_3_years">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Recoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Borderline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Borderline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignat_Potential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Communication_with_duct"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CS_and_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CS_and_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Communication_with_duct"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Calcification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronic_Pancreatitis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronic_Pancreatitis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatitis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Complex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Complex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Form"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Features -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Features">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Solid_Mass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Solid_Mass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Death -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Death">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Evolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diabete_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diabete_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diabetes_Mellitus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Diabetes_Mellitus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Dilated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Dilated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Bile_Ducts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Dyslipidemia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Dyslipidemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Dyslipidèmie_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Dyslipidèmie_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Enhancing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Enhancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central_Scar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Enhancing_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Enhancing_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Nodular_Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Enucleation_surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Enucleation_surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Surgery_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Exocrine_Oancreatic_Insuddiciency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Exocrine_Oancreatic_Insuddiciency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#HKF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#HKF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#HK_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#HK_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#High_Blood_Pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#High_Blood_Pressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#High_Blood_Pressure_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#High_Blood_Pressure_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatic_Cyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatic_Cyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydhatic_contacts -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydhatic_contacts">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Daily_Habits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Icterus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Icterus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_mucinous_neoplasm____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_muncinous_neoplasm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Intraductal_papillary_muncinous_neoplasm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Islet_Cell_Tumor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Islet_Cell_Tumor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Cancer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#KHF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#KHF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Extra_Pancreatic_Abnormality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Left_Pancreas_surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Left_Pancreas_surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Surgery_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Lobulated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Lobulated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Form"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Macrokystic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Macrokystic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Loculation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Malignat_Potential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Metastatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Metastatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Extra_Pancreatic_Abnormality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Microkystic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Microkystic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Loculation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Minus_1_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Minus_1_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Recoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm_____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Mucinous_Cystic_Neoplasm_____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Multiple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Multiple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Number_of_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#NEM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#NEM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Extra_Pancreatic_Abnormality"/>
     </owl:NamedIndividual>
     
 
@@ -328,6 +1193,454 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#NEO_PERS_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#NEO_PERS_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Next_to_more_6mm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Next_to_more_6mm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Wirsung_Grade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Next_to_the_lesion_5-6_mm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Next_to_the_lesion_5-6_mm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Wirsung_Grade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Nodular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Nodular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Extra_Pancreatic_Abnormality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Calcification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central_Scar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Communication_with_duct"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hematic_content"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None_____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None_____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Nodular_Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None______ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None______">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Septa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_Enhancing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_Enhancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_pariental_enhancement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_dilated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_dilated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Wirsung_Grade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_dilated_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_dilated_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Bile_Ducts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_enhancing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_enhancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Central_Scar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_enhancing_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Not_enhancing_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Nodular_Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Oval -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Oval">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Form"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Oversight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Oversight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Sarcoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Sarcoma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Cancer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Agenesis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Agenesis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Carcinoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Carcinoma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Cancer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Steatorrhea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Steatorrhea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Pancreas_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Partiel_Enhancing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Partiel_Enhancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_pariental_enhancement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Peripheral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Peripheral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Calcification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudo_Mass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudo_Mass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_pariental_enhancement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst_____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pseudocyst_____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#RDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#RDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Radiological_Drainage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Radiological_Drainage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Regular_Thick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Regular_Thick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Right_Pancreas_Surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Right_Pancreas_Surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Surgery_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Rod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Rod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Form"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Round -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Round">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Form"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#SPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#SPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_Protocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#SPC_Surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#SPC_Surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreas_Surgery_Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#SUR_PANC_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#SUR_PANC_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Surgey_Pers_ATDC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma_____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Serous_cystadenoma_____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Several -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Several">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Septa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_Mass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_Mass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm_____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Solid_pseudopapillary_neoplasm_____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Stability_minus_1_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Stability_minus_1_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Evolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Stability_plus_1_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Stability_plus_1_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Evolution"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Tabacco -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Tabacco">
@@ -336,10 +1649,458 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Thick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Thick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Thin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Thin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Tumor_Of_Exocrine_Pancreas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Tumor_Of_Exocrine_Pancreas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Pancreatic_Cancer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_boolean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_boolean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Out_Of_Mucine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_entier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_entier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Age"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_numérique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_numérique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Scar_Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_numérique_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_numérique_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Size_Of_Cystic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_réel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_réel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CA125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_réel_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_réel_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CA19-9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_réel__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_réel__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Carcinoembryonic_Antigen_CEA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Uncomplicated_Surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Uncomplicated_Surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Evolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Unilocular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Unilocular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Loculation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Upstream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Upstream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronics_Pancreatitis_Signs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Upstream_atrophy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Upstream_atrophy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronics_Pancreatitis_Signs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#VL_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#VL_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Medical_Pers_ATCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Visceral_Leishmaniasis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Visceral_Leishmaniasis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Von_hippel_Lindau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Von_hippel_Lindau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Extra_Pancreatic_Abnormality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Von_hippel_Lindau_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Von_hippel_Lindau_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Well_limited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Well_limited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Contours"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wirsung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Wirsung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Communication_with_duct"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#alcoholic -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#alcoholic">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Daily_Habits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#cholecystectomy_ATCD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#cholecystectomy_ATCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Surgey_Pers_ATDC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#complicated_surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#complicated_surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Evolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#dense_declivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#dense_declivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hematic_content"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#dilated_upstream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#dilated_upstream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Wirsung_Grade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#doubtful -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#doubtful">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Communication_with_duct"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#extension_of_surveillance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#extension_of_surveillance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Evolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#femme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#femme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Sexe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#floating_membrane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#floating_membrane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Septa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#high_digestive_stenosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#high_digestive_stenosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#other_signs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#homme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#homme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Sexe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#intestinal_stenosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#intestinal_stenosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Other_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#irregular_peripheral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#irregular_peripheral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Calcification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#linear_peripheral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#linear_peripheral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Calcification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Type_of_Lesions_Pancreatic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma__ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma__">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#ANA_Resultat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma___ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma___">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#EUS_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_RESULT_features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma_____ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#mucinous_cystadenoma_____">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_Pancreatic_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#necrosis_casting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#necrosis_casting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Extra_Pancreatic_Abnormality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patient06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#patien_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#plus_3_years -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#plus_3_years">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Recoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#poorly_limited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#poorly_limited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Contours"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#yes_broadcast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#yes_broadcast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Wirsung_Grade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#yes_broadcast_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#yes_broadcast_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronics_Pancreatitis_Signs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Number_of_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#1_Septa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#1_Septa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Septa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#2_or_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#2_or_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#MRI_Number_of_Lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm(1) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Cystic_pancreatic_neuroendocrine_neoplasm(1)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst(1) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Hydatid_Cyst(1)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#CT_RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None(1) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#None(1)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabri/ontologies/2022/9/untitled-ontology-9#Chronics_Pancreatitis_Signs"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
